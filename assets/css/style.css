@@ -1,0 +1,67 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-size: 1.7rem;
+}
+
+header {
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.slider {
+    flex:1;
+    overflow: hidden;
+}
+
+.slider--width {
+    height:100%;
+    display: flex;
+    transition: all ease 1s;
+}
+
+.slider--item {
+    width:100vw;
+    height:inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:10rem;
+    color: #fff;
+    text-shadow: 1 0.1rem 0.1rem black;
+}
+
+.slider--controls {
+    position:absolute;
+    z-index:5;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem;
+}
+
+.slider--control {
+    width:5rem;
+    height:5rem;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:3rem;
+    font-weight: bold;
+}
